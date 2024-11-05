@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Projects</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!--navbar-->
+    <i class="fas fa-bars fa-2x"
+    id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>  
+        </li>
+        <li class="nav__list">
+            <a href="register.html" class="nav__link">Register</a>  
+          </li>
+          <li class="nav__list">
+            <a href="login.html" class="nav__link">Login</a>  
+          </li>
+          <li class="nav__list">
+            <a href="index.html" class="nav__link">Logout</a>  
+          </li>
+          <li class="nav__list">
+            <a href="profile.html" class="nav__link">Contact </a>  
+          </li>
+          <li class="nav__list"></li>
+            <a href="contact.html" class="nav__link">
+                <img src="mr15.jpeg" class="profile-icon" alt="profile">
+            </a>  
+          </li>
+      </ul>
+      <ul class="nav-lower
+      flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link nav__brand">Moshfiq Express</a>  
+        </li>
+        <li class="nav__list">
+            <a href="card.html" class="nav__link">
+                <span>
+           <i class="fa-solid fa-cart-shopping"></i>
+
+             cart 2 Products - $124.40
+                </span>
+            </a>  
+          </li>
+        </ul>  
+    </nav>
+    <!--nav ends-->
+    <header class="header">
+      <div class="banner flex-space-around">
+       <marquee behavior="" direction=""
+       class="banner__title">50% Sales going on</marquee>
+      </div>
+      <div class="feature flex-space-around">
+        <article class="featurs flex-center">
+          <i class="fa-solid fa-trcuk-fast
+          feature__icon"></i>
+          <i class="fa-solid fa-truck-fast"></i>
+          <h3>Shipping within 7 days</h3>
+        </article> </div> <br/>
+        <article class="feature flex-center">
+          <i class="fa-brands fa-rocketchat
+          feature__icon">
+          </i>
+          <h3>Support 24/7</h3>
+        </article>
+      </div> <br/>
+        <article class="feature flex-center">
+          <i class="fa-regular fa-credit-card
+          feature__icon"></i>
+          <h3>Safe Payment</h3>
+        </article>
+        </div>
+      </header>
+      
+    <main class="flex-center">
+      <div class="sidebar">Sidebar</div>  
+    <section class="categories-section">
+      <h3 class="section-title">Categories</h3>
+      <ul class="list"> 
+        <li class="list__item">
+          <label for="phone">
+            <input type="checkbox" name=""
+            id="phone" value="phones">
+            phones
+          </label>
+          </li>
+        <li class="list__item"></li>
+          <label for="tablets">
+            <input type="checkbox" name=""
+            id="tablet" value="tablets">
+           Tablet
+          </label>
+        </li>
+        <li class="list__item"></li>
+          <label for="headphones">
+            <input type="checkbox" name=""
+            id="headphones" value="headphones">
+            Headphones
+          </label>
+        </li>
+        <li class="list__item"></li>
+          <label for="computers">
+            <input type="checkbox" name=""
+            id="Computers" value="Computers">
+            Computers
+          </label>
+        </li>
+      </ul>
+    </section>
+    <section class="price-section">
+      <h3 class="section-title">Price Range</h3>
+      <ul class="list"> 
+        <li class="list__item"></li>
+          <label for="price1">
+            <input type="radio" name=""
+            id="price1" value="[0,20]">
+            $0-$20
+          </label>
+        </li>
+        <li class="list__item"></li>
+          <label for="price2">
+            <input type="radio" name=""
+            id="price2" value="[21,50]">
+           $21-$50
+          </label>
+        </li>
+        <li class="list__item"></li>
+          <label for="price3">
+            <input type="radio" name=""
+            id="price3" value="[51,100]">
+          $51-$100
+          </label>
+        </li>
+        <li class="list__item"></li>
+          <label for="price4">
+            <input type="radio" name=""
+            id="price4" value="[100,150]">
+            $100-$150
+          </label>
+        </li>
+      </ul>
+    
+    </section>
+    <section class="Shipping-section">
+      <div>
+      <h3 class="section-title">Shipping Options</h3>
+      <ul class="list"> 
+        <li class="list__item"></li>
+          <label for="free">
+            <input type="radio" name="Shipping"
+            id="free" value="free">
+           free
+          </label>
+        </li>
+        <li class="list__item"></li>
+          <label for="paid">
+            <input type="radio" name="Shipping"
+            id="paid" value="paid">
+         Paid
+          </label>
+        </li>
+      </ul>
+    </section>
+      <div class="main-content">
+        <section class="actions flex-space-around"></section>
+        <div class="actions__sort">
+         <label for="sort">Sort By:</label>
+         <select name="sort" id="sort">
+          <option value="sold">Most sold First</option>
+<option value="rating">Most rated First</option>
+<option value="price">Cheapest First</option>  
+<option value="arrival">Newest</option> 
+<option value="discount">Biggest Discount First</option> 
+         </select>
+          </div>
+        <div class="actions__search">
+          <input type="text" placeholder="search product"/>
+          <button class="btn">
+            <i class="fa-sharp fa-solid
+            fa-magniflying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="Products">
+      <article class="Product card">
+        <div class="badge">
+          <span>5 in Stock</span>
+          <hr class="hr-design" />
+          <span>3 sold</span>
+        </div>
+        <img src="headphones.jpg" alt="product1">
+         <div class="product__body">
+          <h3 class="product__name">Sony v-4 Headphone</h3>
+        <p>
+          <span class="dot green"></span>
+          <span class="dot black"></span>
+          <span class="dot red"></span>
+        </p>
+        <p class="product__description">
+          Lorem ispsum dolor sit amet consectetur adipisicing elit.
+          temporibus, quidem...
+          <a href="./product.html" class="learn__more">Learn More.</a>
+  
+        </p>
+        <h4 class="product__price">$225</h4>
+        <p class="product__rating">Rating:4.5/5</p>
+        <button class="btn product__btn">Add To Card</button>
+        </div>
+      </article>
+    </section>
+    </div>
+    </main>
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscibe to Newsletter:</label>
+        <input type="email" id="subscribe" name="subscribe"
+        class="footer__input" placeholder="Your Email Address">
+        <button class="btn btn-subscribe">Subscribe</button>
+      </div>
+      <div>
+        <p>
+          &copy; Copyright 2024 Mosfiq Express.
+          All rights rserved
+        </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
